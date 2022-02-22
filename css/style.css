@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #fff;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+#wrap {
+  width: 100%;
+  position: relative;
+  min-width: 1225px;
+}
+
+header {
+  width: 100%;
+  height: 120px;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+  z-index: 1;
+  background: #fff;
+}
+
+.headerInner {
+  width: 1225px;
+  margin: 0 auto;
+  font-family: "Baloo 2";
+  font-size: 25px;
+}
+.headerInner .logo {
+  width: 400px;
+  float: left;
+}
+.headerInner .logo img {
+  margin-top: 40px;
+}
+
+.headerInner .menu {
+  width: 825px;
+  float: left;
+}
+.headerInner .menu ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.headerInner .menu ul li a:hover {
+  color: #4e2bf4;
+  opacity: 0.7;
+  transition: 1s;
+}
+
+#slide {
+  width: 100%;
+  height: 620px;
+  top: 120px;
+  clear: both;
+  background: #a992ff;
+}
+
+.slideInner {
+  width: 1225px;
+  height: 620px;
+  margin: 0 auto;
+  background: url("../images/slide.png") no-repeat center 100px;
+}
+#center {
+  width: 100%;
+}
+#a1 {
+  height: 1000px;
+  background: #f3fbff;
+}
+#a1 .a1Inner {
+  width: 1225px;
+  height: 1000px;
+  margin: 0 auto;
+  background: url("../images/01.png") no-repeat center center;
+  background-size: 1225px 1000px;
+}
+#a2 .a2Inner {
+  width: 1225px;
+  height: 1000px;
+  margin: 0 auto;
+  background: url("../images/02.png") no-repeat center center;
+  background-size: 1225px 1000px;
+}
+#a3 .a3Inner {
+  width: 1225px;
+  height: 1000px;
+  margin: 0 auto;
+  background: url("../images/03.png") no-repeat center center;
+  background-size: 1225px 1000px;
+}
+#a4 .a4Inner {
+  width: 1225px;
+  height: 1000px;
+  margin: 0 auto;
+  background: url("../images/04.png") no-repeat center center;
+  background-size: 1225px 1000px;
+}
+#a5 .a5Inner {
+  width: 1225px;
+  height: 1000px;
+  margin: 0 auto;
+  background: url("../images/05.png") no-repeat center center;
+  background-size: 1225px 1000px;
+}
+
+#banner {
+  height: 166px;
+  background: #506fff;
+}
+#banner .bannerInner {
+  height: 166px;
+  width: 1225px;
+  margin: 0 auto;
+  background: url("../images/banner.png") no-repeat center center;
+  background-size: 1225px 166px;
+}
+footer {
+  height: 200px;
+  background: #fff;
+}
+
+.footerInner {
+  width: 1225px;
+  height: 200px;
+  margin: 0 auto;
+  background: url("../images/footer.png") no-repeat center center;
+  background-size: cover;
+}
+/* quick - 고정(트렌지션) */
+#quick {
+  width: 60px;
+  height: 300px;
+  background: linear-gradient(45deg, #4e2bf4, #8367fa);
+  position: fixed;
+  right: 0;
+  top: 170px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.3)
+    /*rgb(0,0,0)=검정 에 a(0.3)=투명도 0.3*/;
+}
+#quick ul {
+  padding-top: 20px;
+}
+#quick ul li {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  cursor: pointer;
+  position: relative; /* 기준점 매우중요 */
+}
+#quick ul li .box {
+  width: 2px;
+  height: 2px;
+  transition: 0.3s; /* 0.3초*/
+  position: absolute;
+  top: 19px;
+  left: 19px;
+}
+#quick ul li:hover .box {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%; /* 50% = 정 원 */
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#quick ul li a {
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  background: url("../images/quick.svg") no-repeat;
+  width: 25px;
+  height: 25px;
+  display: block;
+  background-size: 25px 125px;
+  transition: 0.3s;
+}
+#quick ul li a.hs {
+  background-position: 0 0;
+}
+#quick ul li a.hl {
+  background-position: 0 -27px;
+}
+#quick ul li a.hh {
+  background-position: 0 -52px;
+  width: 25px;
+  height: 23px;
+}
+#quick ul li a.he {
+  background-position: 0 -75px;
+}
+#quick ul li a.hb {
+  background-position: 0 -100px;
+}
+#quick ul li:hover a {
+  background: url("../images/quickHover.svg") no-repeat;
+  background-size: 25px 125px;
+}
+#quick ul li:hover a.hs {
+  background-position: 0 0;
+}
+#quick ul li:hover a.hl {
+  background-position: 0 -27px;
+}
+#quick ul li:hover a.hh {
+  background-position: 0 -52px;
+  width: 25px;
+  height: 23px;
+}
+#quick ul li:hover a.he {
+  background-position: 0 -75px;
+}
+#quick ul li:hover a.hb {
+  background-position: 0 -100px;
+}
+/* 하단화살표 */
+.btn_top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 2;
+  display: none;
+}
