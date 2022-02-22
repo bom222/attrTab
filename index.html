@@ -1,71 +1,69 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>현대백화점그룹 통합멤버쉽</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Comfortaa:wght@300&family=Playball&family=Poiret+One&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="shoutcut icon" href="./images/fv.png" />
-    <link rel="stylesheet" href="./css/style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김보미 .attr() teb</title>
     <script src="./script/jquery-1.12.3.js"></script>
-    <script src="./script/script.js"></script>
-  </head>
+    <script>
+      $(function(){
+        $(".btn1").on("click",function(){
+          $(".frame img").attr({"src":"./images/img1.gif","alt":"네온이름"})
+          }); //새 속성 생성
+        $(".btn2").on("click",function(){
+          $(".frame img").attr({"src":"./images/img2.png","alt":"황금비율로고"})
+          });
+        $(".btn3").on("click",function(){
+          $(".frame img").attr({"src":"./images/img3.png","alt":"네온꽃"})
+          });
+        $(".btn4").on("click",function(){
+          $(".frame img").attr({"src":"./images/img4.png","alt":"메탈글자"})
+          });
+        $(".btn5").on("click",function(){
+          $(".frame img").attr({"src":"./images/img5.png","alt":"네온슈야"})
+          });
+        $(".btn6").on("click",function(){
+          $(".frame img").attr({"src":"./images/img6.png","alt":"연필목업"})
+          });
+      }); //Rmx
+    </script>
+    <style>
+      *{margin: 0;padding: 0;}
+      ul,li{list-style: none;}
+      a{text-decoration: none;}
+      body{background: #ddd;}
+      #design{position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%,-50%);}
+      .menu ul{ display: flex; justify-content: space-between;}
+      .menu ul li a{display: block;
+      background: #000; font-size: 14px; color: #fff; text-align: center;width: 110px; padding: 10px 0 10px 0;
+    border-top-left-radius: 10px; border-top-right-radius: 10px;}
+    .menu ul li a:hover{background: #666;}
+    .menu ul li a:focus{background: royalblue;}
+
+
+
+
+    .frame{position: relative;}
+
+    </style>
+</head>
   <body>
-    <div id="wrap">
-      <header>
-        <div class="headerInner">
-          <h1 class="logo">
-            <a href="#" class="logo_btn"
-              ><img src="./images/logo.png" alt="로고"
-            /></a>
-          </h1>
-          <div class="menu">
-            <ul>
-              <li><a href="#a1">COUPON</a></li>
-              <li><a href="#a2">POINT</a></li>
-              <li><a href="#a3">DOWN</a></li>
-              <li><a href="#a4">ROULETTE</a></li>
-              <li><a href="#a5">NEWS</a></li>
-            </ul>
-          </div>
-        </div>
-      </header>
-      <div id="slide">
-        <div class="slideInner"></div>
+    <div id="design">
+      <div class="menu">
+        <ul>
+          <li><a href="#" class="btn1">네온이름</a></li>
+          <li><a href="#" class="btn2">황금비율로고</a></li>
+          <li><a href="#" class="btn3">네온꽃</a></li>
+          <li><a href="#" class="btn4">메탈글자</a></li>
+          <li><a href="#" class="btn5">네온슈야</a></li>
+          <li><a href="#" class="btn6">연필목업</a></li>
+        </ul>
       </div>
-      <div id="center">
-        <div id="a1"><div class="a1Inner"></div></div>
+      
+      <div class="frame"><a href="#"><img src="./images/img1.gif" alt="name animation"></a></div>
 
-        <div id="a2"><div class="a2Inner"></div></div>
-
-        <div id="a3"><div class="a3Inner"></div></div>
-
-        <div id="a4"><div class="a4Inner"></div></div>
-
-        <div id="a5"><div class="a5Inner"></div></div>
-
-        <div id="banner"><div class="bannerInner"></div></div>
-      </div>
-      <footer>
-        <div class="footerInner"></div>
-        <img
-          src="./images/ico_footer_top.png"
-          alt="클릭시최상단"
-          class="btn_top"
-        />
-      </footer>
-    </div>
-    <div id="quick">
-      <ul>
-        <li><span class="box"></span><a href="#" class="hs"></a></li>
-        <li><span class="box"></span><a href="#" class="hl"></a></li>
-        <li><span class="box"></span><a href="#" class="hh"></a></li>
-        <li><span class="box"></span><a href="#" class="he"></a></li>
-        <li><span class="box"></span><a href="#" class="hb"></a></li>
-      </ul>
     </div>
   </body>
 </html>
