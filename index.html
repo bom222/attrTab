@@ -1,68 +1,64 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>김보미 .attr() teb</title>
-    <script src="./script/jquery-1.12.3.js"></script>
-    <script>
-      $(function(){
-        $(".btn1").on("click",function(){
-          $(".frame img").attr({"src":"./images/img1.gif","alt":"네온이름"})
-          }); //새 속성 생성
-        $(".btn2").on("click",function(){
-          $(".frame img").attr({"src":"./images/img2.png","alt":"황금비율로고"})
-          });
-        $(".btn3").on("click",function(){
-          $(".frame img").attr({"src":"./images/img3.png","alt":"네온꽃"})
-          });
-        $(".btn4").on("click",function(){
-          $(".frame img").attr({"src":"./images/img4.png","alt":"메탈글자"})
-          });
-        $(".btn5").on("click",function(){
-          $(".frame img").attr({"src":"./images/img5.png","alt":"네온슈야"})
-          });
-        $(".btn6").on("click",function(){
-          $(".frame img").attr({"src":"./images/img6.png","alt":"연필목업"})
-          });
-      }); //Rmx
-    </script>
-    <style>
-      *{margin: 0;padding: 0;}
-      ul,li{list-style: none;}
-      a{text-decoration: none;}
-      body{background: #ddd;}
-      #design{position: absolute; top: 50%; left: 50%;
-      transform: translate(-50%,-50%);}
-      .menu ul{ display: flex; justify-content: space-between;}
-      .menu ul li a{display: block;
-      background: #000; font-size: 14px; color: #fff; text-align: center;width: 110px; padding: 10px 0 10px 0;
-    border-top-left-radius: 10px; border-top-right-radius: 10px;}
-    .menu ul li a:hover{background: #666;}
-    .menu ul li a:focus{background: royalblue;}
-
-
-
-
-    .frame{position: relative;}
-
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>김보미 .attr() teb</title>
+  <script src="./js/jquery-1.12.3.js"></script>
+  <script>
+    $(function () {
+      $(".btn1").on("click", function () {
+        $(".frame img").attr({ "src": "./images/img1.gif", "alt": "네온이름" })
+      }); //새 속성 생성
+      $(".btn2").on("click", function () {
+        $(".frame img").attr({ "src": "./images/img2.png", "alt": "황금비율로고" })
+      });
+      $(".btn3").on("click", function () {
+        $(".frame img").attr({ "src": "./images/img3.png", "alt": "네온꽃" })
+      });
+      $(".btn4").on("click", function () {
+        $(".frame img").attr({ "src": "./images/img4.png", "alt": "메탈글자" })
+      });
+      $(".btn5").on("click", function () {
+        $(".frame img").attr({ "src": "./images/img5.png", "alt": "네온슈야" })
+      });
+      $(".btn6").on("click", function () {
+        $(".frame img").attr({ "src": "./images/img6.png", "alt": "연필목업" })
+      });
+    });
+  </script>
+  <style>
+    * {margin: 0; padding: 0;}
+    ul,li {list-style: none;}
+    a {text-decoration: none;}
+    body {background: #ddd;}
+    #design {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+    .menu ul {display: flex; justify-content: space-between;}
+    .menu ul li a {display: block; background: #000; font-size: 14px; color: #fff; text-align: center; width: 110px; padding: 10px 0 10px 0; border-top-left-radius: 10px; border-top-right-radius: 10px;}
+    .menu ul li a:hover {background: #666;}
+    .menu ul li a:focus {background: royalblue;}
+    .frame {position: relative;}
+  </style>
 </head>
-  <body>
-    <div id="design">
-      <div class="menu">
-        <ul>
-          <li><a href="#" class="btn1">네온이름</a></li>
-          <li><a href="#" class="btn2">황금비율로고</a></li>
-          <li><a href="#" class="btn3">네온꽃</a></li>
-          <li><a href="#" class="btn4">메탈글자</a></li>
-          <li><a href="#" class="btn5">네온슈야</a></li>
-          <li><a href="#" class="btn6">연필목업</a></li>
-        </ul>
-      </div>
-      
-      <div class="frame"><a href="#"><img src="./images/img1.gif" alt="name animation"></a></div>
 
+<body>
+  <div id="design">
+    <div class="menu">
+      <ul>
+        <li><a href="#a" class="btn1">네온이름</a></li>
+        <li><a href="#a" class="btn2">황금비율로고</a></li>
+        <li><a href="#a" class="btn3">네온꽃</a></li>
+        <li><a href="#a" class="btn4">메탈글자</a></li>
+        <li><a href="#a" class="btn5">네온슈야</a></li>
+        <li><a href="#a" class="btn6">연필목업</a></li>
+      </ul>
     </div>
-  </body>
+    <div class="frame">
+      <a href="#a"><img src="./images/img1.gif" alt="name animation"></a>
+    </div>
+  </div>
+</body>
+
 </html>
